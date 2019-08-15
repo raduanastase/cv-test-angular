@@ -7,6 +7,9 @@ import { AboutComponent } from './about/about.component';
 import {HomeComponent} from './home/home.component';
 import {TopComponent} from './top/top.component';
 import {MatToolbarModule} from '@angular/material/toolbar';
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
+import {GithubProjectsService} from './services/github-projects.service';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -20,11 +23,13 @@ import {MatToolbarModule} from '@angular/material/toolbar';
     AppRoutingModule,
     BrowserAnimationsModule,
     MatToolbarModule,
+    NgbModule,
+    HttpClientModule
   ],
   exports: [
     MatToolbarModule,
   ],
-  providers: [],
+  providers: [GithubProjectsService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
