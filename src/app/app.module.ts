@@ -10,13 +10,15 @@ import {MatToolbarModule} from '@angular/material/toolbar';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import {GithubProjectsService} from './services/github-projects.service';
 import {HttpClientModule} from '@angular/common/http';
+import {InfoComponent} from './info/info.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     AboutComponent,
-    TopComponent
+    TopComponent,
+    InfoComponent
   ],
   imports: [
     BrowserModule,
