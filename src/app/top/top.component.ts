@@ -6,5 +6,6 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./top.component.scss']
 })
 export class TopComponent {
+  public collapsed = true;
   @Input() title: string;
 }
